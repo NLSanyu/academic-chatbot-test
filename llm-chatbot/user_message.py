@@ -1,1 +1,1 @@
-message = ""
+message = "Comment maintenir la qualité des données?"

@@ -34,4 +34,8 @@ messages =  [
     'content': f"{delimiter}{user_message.message}{delimiter}"}
 ] 
 response = get_completion_from_messages(messages)
-print(response)
+
+response_file = os.path.join(os.getcwd(), "llm_response.txt")
+with open(response_file, "a") as f:
+    f.write(f"\n\n{response}")
+
